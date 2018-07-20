@@ -28,11 +28,4 @@ if($_SERVER['REQUEST_METHOD'] === "POST") {
         }
         echo JSON_encode($response);
     }
-    if($data['type'] == "checkToken") {
-        $token = $data['token'];
-        $decoded = JWT::decode($token, SECRET_KEY, array('HS256'));
-        $array = array();
-        $array['decoded'] = $decoded;
-        echo JSON_encode($array);
-    }
 }
