@@ -1,0 +1,10 @@
+{
+    "require": {
+        "firebase/php-jwt": "dev-master"
+    },
+    "autoload": {
+      "psr-4": {
+        "Auth\\": "app/classes/"
+      }
+    }
+}
